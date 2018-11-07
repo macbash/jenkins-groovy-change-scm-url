@@ -8,6 +8,7 @@ import jenkins.*
 import jenkins.model.*
 
 def modifyGitUrl(url) {
+  // here you may need to change 'source' and 'destination'
   def newurl = url.replace("github.com", "bitbucket.com")
   return newurl
 }
